@@ -1,0 +1,84 @@
+
+import Cleanhome from '../assets/Cleanhome.png'
+import FoodOrder from '../assets/FoodOrder.png'
+import Gragepro from '../assets/Gragepro.png'
+import Health from '../assets/Health.png'
+import Supercar from '../assets/Supercar.png'
+import Fruits from '../assets/Fruits.png'
+import Cards from './Cards'
+
+
+
+const Projects = () => {
+   
+
+    const projectJson = [
+        {
+          title: 'Clean-Home-Services',
+          desc: 'Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.',
+          image: Cleanhome,
+          live: "https://clean-home-services-24404.web.app/",
+          ClientSide:"https://github.com/amithasanamithasan/Clean-Home-Services",
+          ServerSide:"https://github.com/amithasanamithasan/Clean-Home-Server"
+        },
+        {
+          title: 'Tasty-Delicious-Restaurant',
+          desc: 'The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!',
+          image: FoodOrder,
+          live: "https://tasty-delicious-restaurant.web.app/",
+          ClientSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
+          ServerSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Server"
+        },
+        {
+          title: 'Garage-Pro-Solution',
+          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          image: Gragepro,
+          live: "https://garage-pro-solution-t4ie.vercel.app/",
+          ClientSide: "https://github.com/amithasanamithasan/garage-pro-solution",
+          ServerSide:"https://github.com/amithasanamithasan/car-repair-server"
+        },
+        {
+          title: 'ReactHealthWellnessEvents',
+          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          image: Health,
+          live: "https://reacthealthwellnessevents.web.app/",
+          ClientSide: "https://github.com/amithasanamithasan/ReactHealthWellnessEvents"
+        },
+        {
+          title: 'Super Car',
+          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          image: Supercar,
+          live: "https://supercar123.netlify.app/",
+          ClientSide: "https://github.com/rohitsingh93300/supercars"
+        },
+        {
+          title: 'Fruits-Burst',
+          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          image: Fruits,
+          live: "https://amithasanamithasan.github.io/fruits-burst-frontend/",
+          ClientSide: "https://github.com/amithasanamithasan/fruits-burst-frontend"
+        },
+      ];
+
+  return (
+    <section id='projects' className='relative bg-gray-700 py-10 px-4'>
+      <div className='mb-16 max-w-7xl mx-auto'>
+      <h2
+  className='text-3xl font-bold mb-8 text-white border-b border-red-500 w-max pb-4'
+  data-aos="fade-right" 
+  data-aos-duration="1000"
+>
+  My Projects
+</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10' >
+            {projectJson.map((items)=> {
+                return <Cards item={items}/>
+            })}
+        </div>
+      </div>
+    </section>
+    
+  )
+}
+
+export default Projects

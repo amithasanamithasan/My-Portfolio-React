@@ -4,7 +4,7 @@ import reactLogo from '../assets/React.png'
 import reduxLogo from '../assets/Redux.png'
 import tailwind from '../assets/Tailwind Css.png'
 import SocialMediaDropdown from './SocialMediaDropdown'
-
+import NextJs from '../assets/NextJs.png'
 const Hero = () => {
   return (
     <section className='relative'>
@@ -21,6 +21,7 @@ const Hero = () => {
                  <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
                  <img src={reduxLogo} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
                  <img src={tailwind} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
+                 <img src={NextJs} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
             </div>
         </div>
       </div>
