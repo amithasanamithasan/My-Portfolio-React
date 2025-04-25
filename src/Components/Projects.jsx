@@ -5,6 +5,7 @@ import Gragepro from '../assets/Gragepro.png'
 import Health from '../assets/Health.png'
 import Supercar from '../assets/Supercar.png'
 import Fruits from '../assets/Fruits.png'
+import Car from '../assets/Car.png'
 import Cards from './Cards'
 
 
@@ -28,6 +29,16 @@ const Projects = () => {
           live: "https://tasty-delicious-restaurant.web.app/",
           ClientSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
           ServerSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Server"
+        },
+        {
+          title: 'CarBuyCarSell',
+          desc: '',
+          Framework:'Next js',
+          ToolsTecnology:'axios formik js-cookie lucide-react next next-auth react react-dom react-dropzone react-fast-marquee react-icons react-responsive-modal react-spinners recharts sharp yup',
+          image:Car,
+          live: "https://cu-car-f-amithasanfaysals-projects.vercel.app/",
+          ClientSide: "https://github.com/amithasanamithasan/Cu.Car.F",
+          ServerSide:""
         },
         {
           title: 'Garage-Pro-Solution',

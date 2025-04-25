@@ -11,7 +11,7 @@ import Testimonials from './Components/Testimonials'
 function App() {
  
   return (
-    <>
+    <div>
      <Particle/>
     <Navbar/>
     <Hero/>
@@ -20,7 +20,7 @@ function App() {
     <Testimonials/>
     <Contact/>
   
-    </>
+    </div>
   )
 }
 
