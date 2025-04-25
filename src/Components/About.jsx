@@ -20,7 +20,7 @@ const About = () => {
                     </div>
 
                    
-                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div id="skill" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                         <Skill />
                     </div>
 

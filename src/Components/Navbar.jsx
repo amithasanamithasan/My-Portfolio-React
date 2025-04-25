@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import Logo from '../assets/Logo.png';
-
+import Lottie from 'lottie-react';
+import Protfolio from '../assets/protfolio.json';
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Skills', href: '#skill' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
-              <img src={Logo} alt="Your Logo" className="h-10 w-auto rounded-md" />
+            <Lottie loop={true} animationData={Protfolio} className="h-20 w-auto rounded-md"></Lottie>
               <span className="ml-3 text-xl font-semibold text-gray-900 hidden sm:block"></span>
             </a>
           </div>
