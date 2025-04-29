@@ -1,11 +1,11 @@
-
-import Cleanhome from '../assets/Cleanhome.png'
 import FoodOrder from '../assets/FoodOrder.png'
-import Gragepro from '../assets/Gragepro.png'
-import Health from '../assets/Health.png'
-import Supercar from '../assets/Supercar.png'
-import Fruits from '../assets/Fruits.png'
 import Car from '../assets/Car.png'
+import Cleanhome from '../assets/Cleanhome.png'
+import Health from '../assets/Health.png'
+import Supercar from '../assets/Capture.png'
+import Gragepro from '../assets/Gragepro.png'
+import Fruits from '../assets/Fruits.png'
+
 import Cards from './Cards'
 
 
@@ -14,32 +14,42 @@ const Projects = () => {
    
 
     const projectJson = [
+      {
+        title: 'Tasty-Delicious-Restaurant',
+        desc: 'The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!',
+        image: FoodOrder,
+        live: "https://tasty-delicious-restaurant.web.app/",
+        ClientSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
+        ServerSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Server"
+      },
+      {
+        title: 'CarBuyCarSell',
+        desc: '',
+        Framework:'Next js',
+        ToolsTecnology:'axios ,formik js-cookie, lucide-react, next next-auth ,react react-dom ,react-dropzone ,react-fast-marquee ,react-icons ,react-responsive-modal, react-spinners ,recharts, sharp yup',
+        image:Car,
+        live: "https://cu-car-f-amithasanfaysals-projects.vercel.app/",
+        ClientSide: "https://github.com/amithasanamithasan/Cu.Car.F",
+        ServerSide:""
+      },
         {
           title: 'Clean-Home-Services',
-          desc: 'Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.',
+          Framework:'React js',
+          ToolsTecnology : 'HTML, CSS (Tailwind CSS, MUI, DaisyUI), React.js, Axios, React Router, Context Api,React Hook Form, .',
           image: Cleanhome,
+          backend: "Node.js, Express.js, JWT, Interceptor, SSLCommerz payment integration.",
           live: "https://clean-home-services-24404.web.app/",
           ClientSide:"https://github.com/amithasanamithasan/Clean-Home-Services",
           ServerSide:"https://github.com/amithasanamithasan/Clean-Home-Server"
         },
         {
-          title: 'Tasty-Delicious-Restaurant',
-          desc: 'The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!',
-          image: FoodOrder,
-          live: "https://tasty-delicious-restaurant.web.app/",
-          ClientSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
-          ServerSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Server"
+          title: 'Laxraous Car',
+          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          image: Supercar,
+          live: "https://animation-laxraous-car.vercel.app/",
+          ClientSide: "https://github.com/amithasanamithasan/animation-laxraous-car"
         },
-        {
-          title: 'CarBuyCarSell',
-          desc: '',
-          Framework:'Next js',
-          ToolsTecnology:'axios formik js-cookie lucide-react next next-auth react react-dom react-dropzone react-fast-marquee react-icons react-responsive-modal react-spinners recharts sharp yup',
-          image:Car,
-          live: "https://cu-car-f-amithasanfaysals-projects.vercel.app/",
-          ClientSide: "https://github.com/amithasanamithasan/Cu.Car.F",
-          ServerSide:""
-        },
+       
         {
           title: 'Garage-Pro-Solution',
           desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
@@ -55,13 +65,7 @@ const Projects = () => {
           live: "https://reacthealthwellnessevents.web.app/",
           ClientSide: "https://github.com/amithasanamithasan/ReactHealthWellnessEvents"
         },
-        {
-          title: 'Super Car',
-          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
-          image: Supercar,
-          live: "https://supercar123.netlify.app/",
-          ClientSide: "https://github.com/rohitsingh93300/supercars"
-        },
+       
         {
           title: 'Fruits-Burst',
           desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',

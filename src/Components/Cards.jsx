@@ -8,8 +8,9 @@ const Cards = ({ item }) => {
             <div className='p-4'>
                 <h1 className='font-semibold text-xl mb-2'>{item.title}</h1>
                 <p>{item.desc}</p>
-             <p className='text-cyan-600'><span className='text-2xl font-semibold text-black' >Frontend: </span> {item.Framework} </p>   
-             <p  className=' text-cyan-600'><span className='text-2xl font-semibold text-black'>ToolsTecnology:</span> {item.ToolsTecnology} </p>   
+             <p className='text-shadow-gray-300'><span className='text-2xl font-semibold text-black' >Frontend: </span> {item.Framework} </p>   
+             <p  className=' text-shadow-gray-300'><span className='text-2xl font-semibold text-black'>ToolsTecnology:</span> {item.ToolsTecnology} </p>   
+             <p  className=' text-shadow-gray-300'><span className='text-2xl font-semibold text-black'>Backend:</span> {item?.backend} </p>   
                 <div className='flex flex-col lg:flex-row gap-3 mt-4'>
                     <a 
                         href={item.live} 
