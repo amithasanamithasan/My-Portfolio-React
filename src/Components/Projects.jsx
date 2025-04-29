@@ -8,15 +8,15 @@ import Fruits from '../assets/Fruits.png'
 
 import Cards from './Cards'
 
-
-
 const Projects = () => {
    
 
     const projectJson = [
       {
         title: 'Tasty-Delicious-Restaurant',
-        desc: 'The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!',
+        Framework:'React js',
+        ToolsTecnology :"HTML, CSS (Tailwind CSS, MUI, DaisyUI), React.js, Context Api, AOS Animation, Lottie, React Icons, React Hook Form, Firebase Auth, Recharts, SweetAlert2, React Helmet Async, TanStack Query, Axios.",
+        backend:" Node.js, Express.js, JWT, Interceptor, Stripe payment integration.",
         image: FoodOrder,
         live: "https://tasty-delicious-restaurant.web.app/",
         ClientSide:"https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
@@ -24,7 +24,6 @@ const Projects = () => {
       },
       {
         title: 'CarBuyCarSell',
-        desc: '',
         Framework:'Next js',
         ToolsTecnology:'axios ,formik js-cookie, lucide-react, next next-auth ,react react-dom ,react-dropzone ,react-fast-marquee ,react-icons ,react-responsive-modal, react-spinners ,recharts, sharp yup',
         image:Car,
@@ -35,7 +34,7 @@ const Projects = () => {
         {
           title: 'Clean-Home-Services',
           Framework:'React js',
-          ToolsTecnology : 'HTML, CSS (Tailwind CSS, MUI, DaisyUI), React.js, Axios, React Router, Context Api,React Hook Form, .',
+          ToolsTecnology : 'HTML, CSS (Tailwind CSS, MUI, DaisyUI), React.js, React Router, Context Api,React Hook Form, Firebase Auth, Lottie, SweetAlert2, Recharts, TanStack Query, Axios.',
           image: Cleanhome,
           backend: "Node.js, Express.js, JWT, Interceptor, SSLCommerz payment integration.",
           live: "https://clean-home-services-24404.web.app/",
@@ -44,7 +43,8 @@ const Projects = () => {
         },
         {
           title: 'Laxraous Car',
-          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          Framework:'React js',
+          ToolsTecnology :"Html,tailwindcss,framer-motion,lucide-react,react-dom,react-hot-toast,react-router-dom",
           image: Supercar,
           live: "https://animation-laxraous-car.vercel.app/",
           ClientSide: "https://github.com/amithasanamithasan/animation-laxraous-car"
@@ -52,7 +52,9 @@ const Projects = () => {
        
         {
           title: 'Garage-Pro-Solution',
-          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          Framework:'Next js',
+          ToolsTecnology:" HTML, CSS (Tailwind CSS), Next.js, Next Auth, React Toastify, Swiper, Axios.",
+          backend:"Node.js, JWT, Bcrypt.",
           image: Gragepro,
           live: "https://garage-pro-solution-t4ie.vercel.app/",
           ClientSide: "https://github.com/amithasanamithasan/garage-pro-solution",
@@ -60,7 +62,9 @@ const Projects = () => {
         },
         {
           title: 'ReactHealthWellnessEvents',
-          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          Framework:'React js',
+          ToolsTecnology:' HTML, CSS (Tailwind CSS), Swiper, React.js, Context Api,Firebase Auth',
+          backend:" JSON API, Firebase Auth",
           image: Health,
           live: "https://reacthealthwellnessevents.web.app/",
           ClientSide: "https://github.com/amithasanamithasan/ReactHealthWellnessEvents"
@@ -68,7 +72,8 @@ const Projects = () => {
        
         {
           title: 'Fruits-Burst',
-          desc: 'Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.',
+          Framework:"React.js",
+          ToolsTecnology:'Html ,css(Tailwind css) React-router-dom',
           image: Fruits,
           live: "https://amithasanamithasan.github.io/fruits-burst-frontend/",
           ClientSide: "https://github.com/amithasanamithasan/fruits-burst-frontend"
