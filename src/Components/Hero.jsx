@@ -9,7 +9,7 @@ import Lottie from 'lottie-react'
 
 const Hero = () => {
   return (
-    <section className='relative bg-[#ffffff]'>
+    <section className='relative '>
       <div className='max-w-7xl mx-auto  py-10'>
         <div className='flex flex-col md:flex-row items-center lg:h-[90vh] justify-between' >
             <div className='md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:px-0 lg:mt-0 mt-10'>
@@ -30,6 +30,7 @@ const Hero = () => {
     
       <SocialMediaDropdown/>
     </section>
+
   )
 }
 
