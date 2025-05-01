@@ -18,8 +18,8 @@ const Hero = () => {
                <p className='mb-4'>I am a passionate web developer with expertise in React, Next.js, and modern web technologies. I love creating beautiful and functional website that solve real world problems.</p>
                <button className='bg-[#391752] text-white px-3 py-2 w-max rounded-md'><a href="https://drive.google.com/file/d/1LBMHWpTgTGkvCTcHYiU8JQRCHb5-SRl8/view?usp=sharing" download target='_blank'><Lottie/> Download CV</a></button>
             </div>
-            <div className='md:w-1/2 relative flex justify-center items-end'>
-                 <img src={profilepic} alt="Rounded avatar"  className='lg:h-[90vh] h-96 rounded-full ' />
+            <div className='md:w-1/2 relative flex justify-center items-end '>
+                 <img src={profilepic} alt="Rounded avatar"  className='lg:h-[90vh] h-96 rounded-full py-6   ' />
                  <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
                  <img src={reduxLogo} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
                  <img src={tailwind} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
