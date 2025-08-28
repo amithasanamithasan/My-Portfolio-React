@@ -1,20 +1,21 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon } from 'lucide-react';
-import Lottie from 'lottie-react';
-import Protfolio from '../assets/protfolio.json';
+import { useState, useEffect } from "react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import Lottie from "lottie-react";
+import Protfolio from "../assets/protfolio.json";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false); // Initialize as false
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Check localStorage and system preference on component mount
-    const savedMode = localStorage.getItem('darkMode');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    // Priority: localStorage > system preference
-    const initialMode = savedMode !== null ? savedMode === 'true' : systemPrefersDark;
+    const savedMode = localStorage.getItem("darkMode");
+    const systemPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    const initialMode =
+      savedMode !== null ? savedMode === "true" : systemPrefersDark;
     setDarkMode(initialMode);
   }, []);
 
@@ -22,46 +23,55 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     // Apply dark mode class and save to localStorage
     if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
     }
   }, [darkMode]);
 
   const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode);
+    setDarkMode((prevMode) => !prevMode);
   };
 
   const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skill' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skill" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-green-200/70 dark:bg-gray-800/70 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
+    <header
+      className={`fixed top-0 w-full z-20 transition-all duration-300 ${
+        scrolled
+          ? "bg-green-200/70 dark:bg-gray-800/70 backdrop-blur-md shadow-sm"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
-              <Lottie loop={true} animationData={Protfolio} className="h-20 w-auto rounded-md" />
+              <Lottie
+                loop={true}
+                animationData={Protfolio}
+                className="h-20 w-auto rounded-md "
+              />
               <span className="ml-3 text-xl font-semibold text-gray-900 dark:text-white hidden sm:block"></span>
             </a>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
@@ -76,7 +86,9 @@ const Navbar = () => {
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
-              aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={
+                darkMode ? "Switch to light mode" : "Switch to dark mode"
+              }
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -88,12 +100,13 @@ const Navbar = () => {
             </a>
           </nav>
 
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
-              aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={
+                darkMode ? "Switch to light mode" : "Switch to dark mode"
+              }
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -113,7 +126,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white/95 dark:bg-gray-800/95 backdrop-blur-lg shadow-xl">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

@@ -14,8 +14,7 @@ export default function Particle() {
   }, []);
 
   // eslint-disable-next-line no-unused-vars
-  const particlesLoaded = (container) => {
-  };
+  const particlesLoaded = (container) => {};
 
   return (
     <>
@@ -25,14 +24,13 @@ export default function Particle() {
           particlesLoaded={particlesLoaded}
           style={{
             zIndex: -1,
-            
           }}
           options={{
             background: {
-                color: {
-                  value: "#d7dec8",
-                },
+              color: {
+                value: "#2d373e",
               },
+            },
             fpsLimit: 120,
             interactivity: {
               events: {
@@ -86,7 +84,7 @@ export default function Particle() {
               },
               opacity: {
                 value: 0.5,
-              },                                                
+              },
               shape: {
                 type: "circle",
               },
