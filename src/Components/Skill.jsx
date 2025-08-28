@@ -19,7 +19,7 @@ const skills = [
   { icon: "lottie", name: "Css" },
   { icon: Tailwind, name: "Tailwind CSS" },
   { icon: "lottie", name: "JavaScript" },
-  { icon: "lottie", name: "React" }, // use a flag for Lottie
+  { icon: "lottie", name: "React" },
   { icon: "lottie", name: "Next.js" },
   { icon: ReduxLogo, name: "Redux" },
   { icon: NodeLogo, name: "Node.js" },
@@ -28,7 +28,6 @@ const skills = [
   { icon: TypeScript, name: "TypeScript" },
 ];
 const Skill = () => {
-  // Initialize AOS when component mounts
   useEffect(() => {
     AOS.init({
       duration: 800,

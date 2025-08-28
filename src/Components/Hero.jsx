@@ -38,27 +38,27 @@ const Hero = () => {
             <img
               src={profilepic}
               alt="Rounded avatar"
-              className="lg:h-[60vh] h-50 rounded-full py-6 z-10 opacity-100 mix-blend-multiply bg-blend-multiply"
+              className="lg:h-[70vh] h-60 w-[1200px] rounded-full py-6 z-10 opacity-100  mt-80  "
             />
 
             <img
               src={reactLogo}
-              alt=""
+              alt="reactLogo"
               className="absolute w-10 top-36 left-0 rounded-full md:hidden"
             />
             <img
               src={reduxLogo}
-              alt=""
+              alt="reduxLogo"
               className="absolute w-10 top-0 right-5 md:hidden"
             />
             <img
               src={tailwind}
-              alt=""
+              alt="tailwind"
               className="absolute w-10 rounded-full right-0 bottom-36 md:hidden"
             />
             <img
               src={NextJs}
-              alt=""
+              alt="NextJs"
               className="absolute w-10 rounded-full right-0 bottom-36 md:hidden"
             />
           </div>

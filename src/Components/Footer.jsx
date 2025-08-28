@@ -9,7 +9,7 @@ const Footer = () => {
       className=" py-4 relative"
     >
       <div className="container mx-auto px-4 text-center text-2xl text-pink-600">
-        <p>&copy; 2024 Amit Hasan Faysal. All rights reserved</p>
+        <p></p>
       </div>
     </motion.footer>
   );

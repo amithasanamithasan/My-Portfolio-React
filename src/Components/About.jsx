@@ -20,9 +20,11 @@ const About = () => {
               Hi, I am Amit Hasan Faysal
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-200 lg:mx-auto">
-              I am a professional with full-stack development capabilities and
-              am proficient in the MERN stack (MongoDB, Express.js, React.js,
-              Next.js, Typescript, Javascript, and Node.js).
+              I am a passionate web developer specializing in React, Next.js,
+              and modern web technologies. I thrive on creating beautiful,
+              user-friendly, and highly functional websites that solve
+              real-world problems. My goal is to deliver seamless digital
+              experiences that combine aesthetic design with robust performance.
             </p>
           </div>
 
