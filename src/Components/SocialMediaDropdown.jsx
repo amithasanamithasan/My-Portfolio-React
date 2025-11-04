@@ -26,7 +26,7 @@ const SocialMediaDropdown = () => {
       {isOpen && (
         <div className="absolute right-0 mt-4 w-14 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-300 origin-top">
           <a 
-            href="https://facebook.com" 
+            href="https://www.facebook.com/amit.hasan.5667" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center p-3 hover:bg-blue-100 text-blue-600 transition-colors duration-200"

@@ -5,24 +5,52 @@ import tailwind from "../assets/Tailwind Css.png";
 import SocialMediaDropdown from "./SocialMediaDropdown";
 import NextJs from "../assets/NextJs.png";
 import Lottie from "lottie-react";
-
+import { useEffect, useState } from "react";
+import {professionTexts } from "../data";
 const Hero = () => {
+
+    const [currentText, setcurrentText] = useState(professionTexts[0]);
+     const [isRotating, setIsRoating] = useState(false);
+    let currentIndex = 0;
+    useEffect(() => {
+    const interval = setInterval(() => {
+      setIsRoating(true);
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % professionTexts.length;
+        setcurrentText(professionTexts[currentIndex]);
+        setIsRoating(false);
+      }, 200);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="relative ">
       <div className="max-w-7xl mx-auto  py-10">
         <div className="flex flex-col md:flex-row items-center lg:h-[90vh] justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:px-0 lg:mt-0 mt-10">
-            <h1 className="lg:text-7xl text-4xl  lg:leading-snug font-stretch-50% ">
+            {/* <h1 className="lg:text-5xl text-4xl  lg:leading-snug font-stretch-50% ">
               Hi There, <br />I am Amit Hasan{" "}
               <span className="text-cyan-800 font-stretch-20%"> Faysal</span>
-            </h1>
-            <p className="md:text-2xl text-xl mb-4 font-stretch-20%">
-              Web Developer & Designer
-            </p>
+            </h1> */}
+              <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider  xl:py-4 py-2 overflow-hidden">
+            I'am{" "}
+            <span
+              className={`inline-block xl:w-[380px] md:w-[240px] w-[160px] lg:ml-6 ml-2 text-cyan-500 
+                font-extrabold transform origin-left transition-transform duration-300 ease-out${
+                isRotating ? "rotate-[100deg]" : "rotate-0"
+              }`}
+            >
+              {" "}
+              {currentText}
+            </span>
+            Web Developer
+          </span>
             <p className="mb-4 font-mono text-2xl">
+               Hi There,I am <span className="text-yellow-400 font-stretch-20%"> Amit Hasan Faysal</span>.
+               <br />
               I am a passionate web developer with expertise in React, Next.js,
               and modern web technologies. I love creating beautiful and
-              functional website that solve real world problems.
+              functional website that solve problems.
             </p>
             <button className="bg-[#391752] text-white px-3 py-2 w-max rounded-md">
               <a
@@ -38,7 +66,7 @@ const Hero = () => {
             <img
               src={profilepic}
               alt="Rounded avatar"
-              className="lg:h-[70vh] h-60 w-[1200px] rounded-full py-6 z-10 opacity-100  mt-80  "
+              className="lg:h-[70vh] h-60 w-[1200px] rounded-full py-6 z-10 opacity-100  mt-65  "
             />
 
             <img

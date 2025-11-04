@@ -14,6 +14,7 @@ import Html from "../assets/html.json";
 import Css from "../assets/css.json";
 import Next from "../assets/nextjs.json";
 import JavaSc from "../assets/javascript.json";
+import Laravel from "../assets/laravel_banner-300x300-1.webp";
 const skills = [
   { icon: "lottie", name: "Html" },
   { icon: "lottie", name: "Css" },
@@ -26,6 +27,7 @@ const skills = [
   { icon: Express, name: "Express.js" },
   { icon: Mongodb, name: "MongoDB" },
   { icon: TypeScript, name: "TypeScript" },
+  { icon: Laravel, name: "Laravel" },
 ];
 const Skill = () => {
   useEffect(() => {
@@ -123,7 +125,9 @@ const Skill = () => {
                     alt={skill.name}
                     className="h-15 w-15 rounded "
                   />
-                )}
+                )
+                
+                }
                 <span>{skill.name}</span>
               </div>
             ))}
