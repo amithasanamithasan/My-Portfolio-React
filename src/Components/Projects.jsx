@@ -7,6 +7,8 @@ import Supercar from "../assets/Capture.png";
 import Gragepro from "../assets/Gragepro.png";
 import Fruits from "../assets/Fruits.png";
 import donation from "../assets/donation.png";
+import CryptoSphere from "../assets/Crypto-Sphere.png";
+import newsportal from "../assets/newsportal.jpg";
 
 import Cards from "./Cards";
 
@@ -83,6 +85,23 @@ const Projects = () => {
       live: "https://amithasanamithasan.github.io/fruits-burst-frontend/",
       ClientSide: "https://github.com/amithasanamithasan/fruits-burst-frontend",
     },
+     {
+      title: "Crypto-Sphere",
+      Framework: "React.js",
+      category: "design",
+      image:CryptoSphere,
+      live: "https://66f2cf9146847235c0237dd0--soft-froyo-4c086e.netlify.app/#",
+      ClientSide: "https://github.com/amithasanamithasan/Crypto-Sphere-project",
+    },
+    {
+      title: "Bd-News-Portal",
+      Framework: "React.js",
+      category: "design",
+      image:newsportal,
+      live: "https://reactjs-news-portal-project.web.app/",
+      ClientSide: "https://github.com/amithasanamithasan/bd-news-portal",
+    },
+       
   ];
 
   const [activeTab, setActiveTab] = useState("all");

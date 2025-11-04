@@ -35,7 +35,7 @@ const SocialMediaDropdown = () => {
             <FaFacebook className="text-2xl" />
           </a>
            <a 
-            href="www.linkedin.com/in/amit-hasan-faysal-ab91b61b8" 
+            href="https://www.linkedin.com/in/amit-hasan-faysal-ab91b61b8/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center p-3 hover:bg-blue-100 text-blue-700 transition-colors duration-200"

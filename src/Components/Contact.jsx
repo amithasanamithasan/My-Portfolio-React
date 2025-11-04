@@ -1,6 +1,6 @@
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import linkedin from "../assets/linkedin.png";
+// import facebook from "../assets/facebook.png";
+// import instagram from "../assets/instagram.png";
+// import linkedin from "../assets/linkedin.png";
 import Lottie from "lottie-react";
 import contact from "../assets/Contact.json";
 import Footer from "./Footer";
@@ -77,7 +77,7 @@ const Contact = () => {
                 className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
-            <button className="bg-red-500 text-white px-3 py-2 rounded-lg">
+            <button className="bg-red-500 text-white px-3 py-2 rounded-lg cursor-pointer hover:bg-violet-900 transition-colors duration-300 ">
               Send Message
             </button>
           </form>

@@ -35,7 +35,7 @@ const Hero = () => {
               <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider  xl:py-4 py-2 overflow-hidden">
             I'am{" "}
             <span
-              className={`inline-block xl:w-[380px] md:w-[240px] w-[160px] lg:ml-6 ml-2 text-cyan-500 
+              className={`inline-block xl:w-[380px] md:w-[240px] w-[160px] lg:ml-5 ml-2 text-cyan-200 
                 font-extrabold transform origin-left transition-transform duration-300 ease-out${
                 isRotating ? "rotate-[100deg]" : "rotate-0"
               }`}

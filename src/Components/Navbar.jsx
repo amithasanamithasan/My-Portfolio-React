@@ -60,13 +60,13 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+         
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
               <Lottie
                 loop={true}
                 animationData={Protfolio}
-                className="h-20 w-auto rounded-md "
+                className=" w-50 rounded-md   "
               />
               <span className="ml-3 text-xl font-semibold text-gray-900 dark:text-white hidden sm:block"></span>
             </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-1 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                className="text-yellow-400 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-1 py-2 text-sm font-medium transition-colors duration-300 relative group"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -103,7 +103,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
+              className="p-2 rounded-full text-[#127fff] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
               aria-label={
                 darkMode ? "Switch to light mode" : "Switch to dark mode"
               }
@@ -112,12 +112,12 @@ const Navbar = () => {
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#127fff] dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 focus:outline-none"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
+                <X className="h-6 w-6 " aria-hidden="true" />
               ) : (
                 <Menu className="h-6 w-6" aria-hidden="true" />
               )}
