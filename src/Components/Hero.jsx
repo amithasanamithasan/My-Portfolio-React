@@ -48,9 +48,7 @@ const Hero = () => {
             <p className="mb-4 font-mono text-2xl">
                Hi There,I am <span className="text-yellow-400 font-stretch-20%"> Amit Hasan Faysal</span>.
                <br />
-              I am a passionate web developer with expertise in React, Next.js,
-              and modern web technologies. I love creating beautiful and
-              functional website that solve problems.
+            A Full Stack Web Developer Passionate About Building Professional and Interactive Websites.
             </p>
             <button className="bg-[#391752] text-white px-3 py-2 w-max rounded-md">
               <a

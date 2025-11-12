@@ -9,6 +9,7 @@ import Fruits from "../assets/Fruits.png";
 import donation from "../assets/donation.png";
 import CryptoSphere from "../assets/Crypto-Sphere.png";
 import newsportal from "../assets/newsportal.jpg";
+import ums from "../assets/umsfrontend.png";
 
 import Cards from "./Cards";
 
@@ -24,6 +25,17 @@ const Projects = () => {
         "https://github.com/amithasanamithasan/Tasty-Delicious-Restaurant",
       ServerSide:
         "https://github.com/amithasanamithasan/Tasty-Delicious-Server",
+    },
+      {
+      title: "University-management-system",
+      Framework: "React js",
+      category: "react",
+      image: ums,
+      live: "https://um-frontend.vercel.app",
+      ClientSide:
+        "https://github.com/amithasanamithasan/um-frontend",
+      ServerSide:
+        "https://github.com/amithasanamithasan/university-management-system",
     },
     {
       title: "CarBuyCarSell",

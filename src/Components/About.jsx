@@ -17,14 +17,10 @@ const About = () => {
               </span>
             </h2>
             <p className=" py-5 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-200 sm:text-4xl">
-              Hi, I am Amit Hasan Faysal
+          ✨ Building Scalable & Interactive Web Solutions ✨
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-200 lg:mx-auto">
-              I am a passionate web developer specializing in React, Next.js,
-              and modern web technologies. I thrive on creating beautiful,
-              user-friendly, and highly functional websites that solve
-              real-world problems. My goal is to deliver seamless digital
-              experiences that combine aesthetic design with robust performance.
+         Motivated Frontend Developer skilled in HTML, CSS3, JavaScript, React.js,Next.js and Tailwind CSS, focusing on responsive, pixel-perfect designs from Figma. Eager to learn CMS platforms like WordPress and thrive in fast-paced, collaborative environments
             </p>
           </div>
 
