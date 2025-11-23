@@ -8,8 +8,8 @@ const Footer = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className=" py-4 relative"
     >
-      <div className="container mx-auto px-4 text-center text-2xl text-pink-600">
-        <p></p>
+      <div className="container mx-auto px-4 text-center text-sm text-cyan-200">
+        <p>@ Amit Hasan Faysal 2025</p>
       </div>
     </motion.footer>
   );
