@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import Lottie from "lottie-react";
 import Protfolio from "../assets/protfolio.json";
+import resume from"../assets/Amit-Hasan-Faysal.pdf";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -96,7 +97,7 @@ const Navbar = () => {
               <div className="bg-white/10 border hidden md:flex border-white/20 py-1.5 px-1.5 lg:px-2 rounded-md relative group overflow-hidden hover:shadow-md shadow-white/10 items-center justify-center">
                 <div className="absolute top-0 -right-1/2 w-1/4 h-full bg-white/20 blur-sm group-hover:right-44 duration-700"></div>
               <a
-                      href="https://drive.google.com/file/d/1LBMHWpTgTGkvCTcHYiU8JQRCHb5-SRl8/view?usp=sharing"
+                      href={resume}
                       target="_blank"
                       className="py-2 lg:py-2.5 px-4 md:px-6 lg:px-8 rounded-lg text-sm  bg-gradient-to-r from-[#3c1c9c] via-[#623ac0] to-[#b091f8] text-white relative group overflow-hidden inline-block"
                     >
@@ -158,14 +159,23 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
+
+
               <a
-                      href="https://drive.google.com/file/d/1LBMHWpTgTGkvCTcHYiU8JQRCHb5-SRl8/view?usp=sharing"
-                      target="_blank"
-                      className="py-2 lg:py-2.5 px-4 md:px-6 lg:px-8 rounded-lg text-sm  bg-gradient-to-r from-[#3c1c9c] via-[#623ac0] to-[#b091f8] text-white relative group overflow-hidden inline-block"
-                    >
-                      <span className="relative z-10">Resume</span>
-                      <span className="absolute top-0 w-1/4 h-full -left-24 bg-white/20 blur-sm group-hover:left-40 duration-1000 transition-all ease-out z-0"></span>
-                    </a>
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 lg:py-2.5 px-4 md:px-6 lg:px-8 rounded-lg text-sm bg-gradient-to-r from-[#3c1c9c] via-[#623ac0] to-[#b091f8] text-white relative group overflow-hidden inline-block"
+              >
+                <span className="relative z-10">Resume</span>
+
+
+                <span
+                  className="absolute top-0 w-1/4 h-full -left-24 bg-white/20 blur-sm 
+                            group-hover:left-40 duration-1000 transition-all ease-out z-0"
+                ></span>
+              </a>
+
           </div>
         </div>
       )}

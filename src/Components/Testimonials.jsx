@@ -7,53 +7,44 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
-import { Quote, Star } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Amit Hasan Faysal",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolor, voluptatibus quos ipsam et est!",
+      name: "Dynamicflow IT",
+      position: "Junior Web Developer",
+      year: "May 2025 – Nov 2025",
+      text: "Developed responsive and interactive UIs using React.js, JavaScript, and Tailwind CSS. Integrated Laravel-based REST APIs, built reusable components, optimized performance, and contributed to dashboards, forms, authentication flows, and state management. Implemented print-ready views, performed cross-browser testing, and supported UX-focused UI redesigns."
     },
     {
       id: 2,
-      name: "Michael Chen",
-      rating: 4,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolor, voluptatibus quos ipsam et est!",
+      name: "Luminous Labs",
+      year: "January 2021 – March 2021",
+      position: "Web Development Intern",
+      text: "Participated in the full web development lifecycle and ongoing project maintenance. Used Git for version control and task collaboration. Integrated modern frameworks to enhance application performance and functionality, and utilized Laravel to build and visualize web applications."
     },
     {
       id: 3,
-      name: "Sarah Thompson",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolor, voluptatibus quos ipsam et est!",
-    },
-    {
-      id: 4,
-      name: "David Rodriguez",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolor, voluptatibus quos ipsam et est!",
-    },
-    {
-      id: 5,
-      name: "Lisa Patel",
-      rating: 4,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolor, voluptatibus quos ipsam et est!",
+      name: "Mesleap",
+      year: "September 2024 – October 2024",
+      position: "Web Development (Intern — Full Time)",
+      text: "Collaborated with designers and backend developers to integrate APIs and build user-facing features using HTML, CSS, JavaScript, and React.js/Next.js. Developed reusable components with Tailwind CSS and practiced Git-based version control while contributing to code reviews."
     },
   ];
 
   return (
-    <div id="testimonials" className="py-10 bg-gray-800 relative">
-      <h1 className="text-center text-2xl lg:text-4xl font-bold">
-        What our Customer Say
+    <div id="testimonials" className="py-10 bg-gray-700 relative">
+      <h1 className="text-center text-2xl lg:text-4xl font-bold text-white">
+        Working Experience
       </h1>
+
       <div className="max-w-6xl mx-auto py-10 px-5">
         <Swiper
           style={{
             "--swiper-pagination-color": "#EF4444",
             "--swiper-pagination-bullet-inactive-color": "#999999",
-            "--swiper-pagination-bullet-inactive-opacity": "1",
             "--swiper-pagination-bullet-size": "10px",
             "--swiper-pagination-bullet-horizontal-gap": "6px",
           }}
@@ -69,50 +60,33 @@ const Testimonials = () => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          pagination={{
-            el: ".swiper-pagination",
-            type: "bullets",
-            clickable: true,
-          }}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
           className="mySwiper"
         >
-          {testimonials.map((item) => {
-            return (
-              <SwiperSlide key={item.id}>
-                <div className="border border-gray-400 shadow-md shadow-red-500 rounded-lg flex flex-col p-4">
-                  {item.rating === 4 ? (
-                    <div className="flex">
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star />
-                    </div>
-                  ) : (
-                    <div className="flex">
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star fill="true" />
-                      <Star fill="true" />
-                    </div>
-                  )}
-                  <p className="py-3">{item.text}</p>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <h3 className="font-semibold text-red-500 text-lg">
-                        {item.name}
-                      </h3>
-                      <p className="text-sm mt-1">CEO, Webelite Builders</p>
-                    </div>
-                    <Quote className="text-red-400" />
-                  </div>
+          {testimonials.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="border border-gray-500 bg-white shadow-lg rounded-lg p-6 h-full flex flex-col justify-between">
+                
+        
+                <div className="flex justify-end">
+                  <Quote className="text-red-500 w-10 h-10 opacity-90" />
                 </div>
-              </SwiperSlide>
-            );
-          })}
+
+                <div className="text-center h[250px]">
+                  <h3 className="text-2xl font-bold text-gray-900">{item.name}</h3>
+                  <p className="text-xl font-semibold text-violet-700 mt-1">{item.position}</p>
+                  <p className="text-sm text-gray-800">{item.year}</p>
+
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
-        <div className="swiper-pagination my-10 gap-1 relative"></div>
+
+        <div className="swiper-pagination my-10"></div>
       </div>
     </div>
   );

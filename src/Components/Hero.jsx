@@ -7,6 +7,7 @@ import NextJs from "../assets/NextJs.png";
 import Lottie from "lottie-react";
 import { useEffect, useState } from "react";
 import {professionTexts } from "../data";
+import cv from"../assets/Amit-Hasan-Faysal.pdf";
 const Hero = () => {
 
     const [currentText, setcurrentText] = useState(professionTexts[0]);
@@ -20,7 +21,7 @@ const Hero = () => {
         setcurrentText(professionTexts[currentIndex]);
         setIsRoating(false);
       }, 200);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
               Hi There, <br />I am Amit Hasan{" "}
               <span className="text-cyan-800 font-stretch-20%"> Faysal</span>
             </h1> */}
-              <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider  xl:py-4 py-2 overflow-hidden">
+              <span className="xl:text-6xl md:text-4xl text-2xl tracking-wider  xl:py-4 py-2 overflow-hidden text-black">
             I'am{" "}
             <span
               className={`inline-block xl:w-[380px] md:w-[240px] w-[160px] lg:ml-5 ml-2 text-cyan-200 
@@ -45,14 +46,14 @@ const Hero = () => {
             </span>
             Web Developer
           </span>
-            <p className="mb-4 font-mono text-2xl">
+            <p className="mb-4 font-mono text-2xl text-black">
                Hi There,I am <span className="text-yellow-400 font-stretch-20%"> Amit Hasan Faysal</span>.
                <br />
             A Full Stack Web Developer Passionate About Building Professional and Interactive Websites.
             </p>
             <button className="bg-[#391752] text-white px-3 py-2 w-max rounded-md">
               <a
-                href="https://drive.google.com/file/d/1LBMHWpTgTGkvCTcHYiU8JQRCHb5-SRl8/view?usp=sharing"
+                href={cv}
                 download
                 target="_blank"
               >

@@ -17,7 +17,9 @@ const Projects = () => {
   const projectJson = [
     {
       title: "Tasty-Delicious-Restaurant",
-      Framework: "React js",
+      Framework: "React js ,Tailwind css ,Firebase ,React Router Dom,JavaScript",
+      Backend: "Node js Express js MongoDB",
+      ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "react",
       image: FoodOrder,
       live: "https://tasty-delicious-restaurant.web.app/",
@@ -28,7 +30,9 @@ const Projects = () => {
     },
       {
       title: "University-management-system",
-      Framework: "React js",
+      Framework: "React.js, TypeScript,Redux/TooLkit, tailwind css ,Zod ",
+      Backend: "Node js Express js MongoDB",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "react",
       image: ums,
       live: "https://um-frontend.vercel.app",
@@ -39,7 +43,8 @@ const Projects = () => {
     },
     {
       title: "CarBuyCarSell",
-      Framework: "Next js",
+      Framework: "Next js Next Auth Tailwind css  ",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "next",
       image: Car,
       live: "https://cu-car-f-amithasanfaysals-projects.vercel.app/",
@@ -47,7 +52,9 @@ const Projects = () => {
     },
     {
       title: "Clean-Home-Services",
-      Framework: "React js",
+      Framework: "React js, JavaScript, Tailwind css, Firebase ,React Router Dom",
+       Backend: "Node js Express js MongoDB",
+        ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "react",
       image: Cleanhome,
       live: "https://clean-home-services-24404.web.app/",
@@ -56,7 +63,8 @@ const Projects = () => {
     },
     {
       title: "Laxraous Car",
-      Framework: "React js",
+      Framework: "React js, JavaScript, CSS,framer-motion,particles.js ,AOS",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "design",
       image: Supercar,
       live: "https://animation-laxraous-car.vercel.app/",
@@ -65,7 +73,8 @@ const Projects = () => {
     },
     {
       title: "Donation_Campaing",
-      Framework: "React js",
+      Framework: "HTML,CSS,JavaScript,",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "design",
       image: donation,
       live: "https://famous-churros-ece2c3.netlify.app/",
@@ -73,7 +82,8 @@ const Projects = () => {
     },
     {
       title: "Garage-Pro-Solution",
-      Framework: "Next js",
+      Framework: "Next js Tailwind css  next Auth, Firebase  ",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "next",
       image: Gragepro,
       live: "https://garage-pro-solution-t4ie.vercel.app/",
@@ -82,7 +92,8 @@ const Projects = () => {
     },
     {
       title: "ReactHealthWellnessEvents",
-      Framework: "React js",
+      Framework: "React js, Tailwind css ,Firebase ,React Router Dom,JavaScript",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "react",
       image: Health,
       live: "https://reacthealthwellnessevents.web.app/",
@@ -91,7 +102,8 @@ const Projects = () => {
     },
     {
       title: "Fruits-Burst",
-      Framework: "React.js",
+      Framework: "HTML,CSS,JavaScript,tailwind css ",
+       ToolsTecnology: "Figma, VS Code, Postman, Netlify, Heroku",
       category: "design",
       image: Fruits,
       live: "https://amithasanamithasan.github.io/fruits-burst-frontend/",
@@ -99,7 +111,7 @@ const Projects = () => {
     },
      {
       title: "Crypto-Sphere",
-      Framework: "React.js",
+      Framework: "React.js,HTML,CSS,JavaScript,tailwind css, Css",
       category: "design",
       image:CryptoSphere,
       live: "https://66f2cf9146847235c0237dd0--soft-froyo-4c086e.netlify.app/#",
@@ -107,7 +119,7 @@ const Projects = () => {
     },
     {
       title: "Bd-News-Portal",
-      Framework: "React.js",
+      Framework: "React.js ,HTML,CSS,JavaScript,tailwind css, Css",
       category: "design",
       image:newsportal,
       live: "https://reactjs-news-portal-project.web.app/",

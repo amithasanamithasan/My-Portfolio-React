@@ -22,6 +22,10 @@ const Cards = ({ item }) => {
             <span className="font-semibold text-gray-900">Frontend:</span>{" "}
             {item.Framework}
           </p>
+             <p>
+            <span className="font-semibold text-gray-900">Backend:</span>{" "}
+            {item. Backend}
+          </p>
           <p>
             <span className="font-semibold text-gray-900">
               Tools/Technology:

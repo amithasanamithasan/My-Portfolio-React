@@ -49,7 +49,7 @@ const About = () => {
               JavaScript, React.js, Next.js, and Tailwind CSS for smooth user
               experiences. I also have knowledge in full-stack development, with
               a solid understanding of backend tools like Node.js and
-              Express.js. I’m committed to delivering high-quality work and
+              Express.js and Laravel. I’m committed to delivering high-quality work and
               constantly learning new technologies.
             </p>
           </div>
